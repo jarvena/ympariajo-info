@@ -24,7 +24,7 @@ server = app.server
 
 # Reading data
 logger.info('reading data')
-kunnat = gpd.read_file('./data/kunnatwgs84.geojson')
+kunnat = gpd.read_file('./data/kunnatwgs84simplified.geojson')
 statsit = pd.read_csv('./data/ympäriajostatsit.csv', delimiter=';')
 
 # Formatting data
