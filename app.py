@@ -5,6 +5,17 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 import pandas as pd
 import geopandas as gpd
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    filename='app.log',
+    format=
+    '%(asctime)s [%(levelname)s] [%(pathname)s line %(lineno)d @%(thread)d] - %(message)s '
+)
+logger = logging.getLogger(__name__)
+
+logger.info('app script starts')
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = 'Ympäriajojen suoritustilanneseuranta'
@@ -12,10 +23,12 @@ app.title = 'Ympäriajojen suoritustilanneseuranta'
 server = app.server
 
 # Reading data
+logger.info('reading data')
 kunnat = gpd.read_file('./data/kunnat.geojson').to_crs(epsg=4326)
 statsit = pd.read_csv('./data/ympäriajostatsit.csv', delimiter=';')
 
 # Formatting data
+logger.info('formatting data')
 kunnat["Rajaviivan pituus"] = kunnat["Rajaviivan pituus"] / 1000
 kunnat['Ajettu'] = kunnat['NAMEFIN'].isin(statsit["Kunta"].values)
 
@@ -24,6 +37,7 @@ statsit['Selvinneet'] = statsit['Selvinneet'].str.strip(' ').str.split(',')
 statsit['Lähteneet lkm'] = statsit['Lähteneet'].apply(len)
 statsit['Selvinneet lkm'] = statsit['Selvinneet'].apply(len)
 
+logger.info('creating graphs')
 kartta = px.choropleth_mapbox(kunnat,
   geojson=kunnat.geometry,
   locations=kunnat.index,
@@ -59,6 +73,7 @@ fig_osallistuneet.update_layout(
 fig_osallistuneet.update_traces(hovertemplate='Kunta=%{x}<br>Lähteneet=%{y}<extra></extra>', selector={'name': 'Lähteneet lkm'})
 fig_osallistuneet.update_traces(hovertemplate='Kunta=%{x}<br>Selvinneet=%{y}<extra></extra>', selector={'name': 'Selvinneet lkm'})
 
+logger.info('defining layout')
 app.layout = dbc.Container([
     dbc.Row(dbc.Col(dbc.NavbarSimple(brand='Ympäriajotilastot', color='primary', dark=True), width=12), className='shadow mb-3'),
     dbc.Row(
@@ -103,4 +118,5 @@ app.layout = dbc.Container([
 
 
 if __name__ == '__main__':
+  logger.info('running development server')
   app.run_server(debug=True)
