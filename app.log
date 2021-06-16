@@ -1,0 +1,18 @@
+2021-06-16 17:01:12,130 [INFO] [app.py line 18 @139850896783168] - app script starts 
+2021-06-16 17:01:12,138 [INFO] [app.py line 26 @139850896783168] - reading data 
+2021-06-16 17:01:14,654 [INFO] [app.py line 31 @139850896783168] - formatting data 
+2021-06-16 17:01:14,660 [INFO] [app.py line 40 @139850896783168] - creating graphs 
+2021-06-16 17:01:24,293 [INFO] [app.py line 76 @139850896783168] - defining layout 
+2021-06-16 17:01:24,297 [INFO] [app.py line 121 @139850896783168] - running development server 
+2021-06-16 17:01:24,299 [INFO] [/home/antti/projects/ympariajo-info/ajoinfo/lib/python3.8/site-packages/dash/dash.py line 1716 @139850896783168] - Dash is running on http://127.0.0.1:8050/
+ 
+2021-06-16 17:01:25,060 [INFO] [/home/antti/projects/ympariajo-info/app.py line 18 @139691177822016] - app script starts 
+2021-06-16 17:01:25,067 [INFO] [/home/antti/projects/ympariajo-info/app.py line 26 @139691177822016] - reading data 
+2021-06-16 17:01:27,942 [INFO] [/home/antti/projects/ympariajo-info/app.py line 31 @139691177822016] - formatting data 
+2021-06-16 17:01:27,948 [INFO] [/home/antti/projects/ympariajo-info/app.py line 40 @139691177822016] - creating graphs 
+2021-06-16 17:01:37,503 [INFO] [/home/antti/projects/ympariajo-info/app.py line 76 @139691177822016] - defining layout 
+2021-06-16 17:01:37,504 [INFO] [/home/antti/projects/ympariajo-info/app.py line 121 @139691177822016] - running development server 
+2021-06-16 17:04:22,829 [INFO] [/home/antti/projects/ympariajo-info/app.py line 18 @140442734147392] - app script starts 
+2021-06-16 17:04:22,841 [INFO] [/home/antti/projects/ympariajo-info/app.py line 26 @140442734147392] - reading data 
+2021-06-16 17:04:25,361 [INFO] [/home/antti/projects/ympariajo-info/app.py line 31 @140442734147392] - formatting data 
+2021-06-16 17:04:25,367 [INFO] [/home/antti/projects/ympariajo-info/app.py line 39 @140442734147392] - creating graphs 

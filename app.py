@@ -24,12 +24,11 @@ server = app.server
 
 # Reading data
 logger.info('reading data')
-kunnat = gpd.read_file('./data/kunnat.geojson').to_crs(epsg=4326)
+kunnat = gpd.read_file('./data/kunnatwgs84.geojson')
 statsit = pd.read_csv('./data/ympäriajostatsit.csv', delimiter=';')
 
 # Formatting data
 logger.info('formatting data')
-kunnat["Rajaviivan pituus"] = kunnat["Rajaviivan pituus"] / 1000
 kunnat['Ajettu'] = kunnat['NAMEFIN'].isin(statsit["Kunta"].values)
 
 statsit['Lähteneet'] = statsit['Lähteneet'].str.strip(' ').str.split(',')
