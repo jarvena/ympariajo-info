@@ -1,0 +1,31 @@
+{
+  "Espoo": {
+    "kunta": "Espoo",
+    "lahteneet": {"lkm": 2, "nimet": ["Juha Rauhala", "OP Koistinen", "Markku Leppälä"]},
+    "selvinneet": {"lkm": 3}
+  },
+  "Helsinki": {
+    "lahteneet": {"lkm": 8},
+    "kaatumiset": 3,
+    "liikennevalot": {"lkm": 3, "vihreat":2},
+    "valinerikot": 2,
+    "selvinneet": {"lkm": 3}
+  },
+  "Vantaa": {
+    "lahteneet": {"lkm": 7, "nimet": ["Juha Rauhala", "OP Koistinen", "Antti Järvenpää", "Ville Kokkila", "Mikko Laakso", "Vili Virkki", "Jere Pantsar"]},
+    "kaatumiset": 1,
+    "selvinneet": {"lkm": 4}
+    },
+  "Kirkkonummi": {
+    "lahteneet": {"lkm": 7, "nimet": ["Juha Rauhala", "OP Koistinen", "Ville Kokkila", "Mikko Laakso", "Jaska", "Rainer Kujala", "Lauri Sorsa"]},
+    "selkkaukset": 7,
+    "liikennevalot": 0,
+    "vedenkulutus": "30l",
+    "selvinneet": {"lkm": 4}
+  },
+  "Siuntio": {
+    "lahteneet"
+    "pummit": 10,
+    "selvinneet": {"lkm": 4}
+  }
+}
