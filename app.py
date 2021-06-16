@@ -9,6 +9,8 @@ import geopandas as gpd
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = 'Ympäriajojen suoritustilanneseuranta'
 
+server = app.server
+
 # Reading data
 kunnat = gpd.read_file('./data/kunnat.geojson').to_crs(epsg=4326)
 statsit = pd.read_csv('./data/ympäriajostatsit.csv', delimiter=';')
