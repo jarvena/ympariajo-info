@@ -1,4 +1,4 @@
-Kunta;Lähteneet;Selvinneet;Kaatumiset;Välinerikot;Selkkaukset;Liikennevalot
+﻿Kunta;Lähteneet;Selvinneet;Kaatumiset;Välinerikot;Selkkaukset;Liikennevalot
 Espoo;OP Koistinen, Juha Rauhala, Markku Leppälä;OP Koistinen, Juha Rauhala, Markku Leppälä;1;0;0;0
 Helsinki;OP Koistinen, Juha Rauhala, Markku Leppälä, Antti Järvenpää, Ville Kokkila, Oskari Pesola, Jere Pantsar, Lauri Sorsa;OP Koistinen, Markku Leppälä, Antti Järvenpää;3;2;0;3
 Vantaa;OP Koistinen, Juha Rauhala, Antti Järvenpää, Ville Kokkila, Mikko Laakso, Vili Virkki, Jere Pantsar, Markku Leppälä, Pinja Hokkanen;OP Koistinen, Juha Rauhala, Antti Järvenpää, Ville Kokkila, Markku Leppälä, Pinja Hokkanen;1;0;0;4
@@ -8,7 +8,7 @@ Pornainen;OP Koistinen, Juha Rauhala, Antti Järvenpää, Jaska, Markku Leppäl�
 Siuntio;OP Koistinen, Juha Rauhala, Antti Järvenpää, Jaska, Ville Kokkila;OP Koistinen, Juha Rauhala, Antti Järvenpää, Ville Kokkila;1;0;1;1
 Järvenpää;OP Koistinen, Juha Rauhala, Jaska;OP Koistinen, Juha Rauhala, Jaska;0;0;0;0
 Nurmijärvi;OP Koistinen, Juha Rauhala, Jaska, Ville Kokkila, Amelie;OP Koistinen, Juha Rauhala, Jaska, Ville Kokkila;0;1;0;0
-Hanko;OP Koistinen, Juha Rauhala, Jaska, Caj Snickars;OP Koistinen, Juha Rauhala, Jaska;3s;0;0;0
+Hanko;OP Koistinen, Juha Rauhala, Jaska, Caj Snickars;OP Koistinen, Juha Rauhala, Jaska;3;0;0;0
 Inkoo;OP Koistinen, Juha Rauhala, Jaska, Ville Kokkila, Antti Järvenpää, Jere Pantsar, Rinat;OP Koistinen, Juha Rauhala, Jaska, Ville Kokkila, Antti Järvenpää, Jere Pantsar;2;0;2;0
 Kerava;OP Koistinen, Juha Rauhala, Markku Leppälä, Antti Järvenpää, Ville Kokkila, Oskari Pesola, Jere Pantsar, Mikko Laakso, Vili Virkki, Rinat;OP Koistinen, Juha Rauhala, Markku Leppälä, Antti Järvenpää, Ville Kokkila, Oskari Pesola, Jere Pantsar, Mikko Laakso, Vili Virkki, Rinat;5;0;1;0
 Pukkila;OP Koistinen, Juha Rauhala, Antti Järvenpää;OP Koistinen, Juha Rauhala, Antti Järvenpää;0;0;0;0
