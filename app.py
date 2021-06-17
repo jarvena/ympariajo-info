@@ -36,6 +36,8 @@ statsit['Selvinneet'] = statsit['Selvinneet'].str.strip(' ').str.split(',')
 statsit['Lähteneet lkm'] = statsit['Lähteneet'].apply(len)
 statsit['Selvinneet lkm'] = statsit['Selvinneet'].apply(len)
 
+statsit_osallistujittain = pd.DataFrame(statsit['Selvinneet'].explode().value_counts()).rename(columns={'Selvinneet': 'Selviytymiset'})
+
 logger.info('creating graphs')
 kartta = px.choropleth_mapbox(kunnat,
   geojson=kunnat.geometry,
@@ -59,7 +61,8 @@ fig_selkkaukset = px.bar(statsit, x='Kunta', y='Selkkaukset')
 fig_selkkaukset.update_layout(
   margin={"r":0,"t":0,"l":0,"b":0},
   xaxis={'title_text': None},
-  yaxis={'title_text': 'Selkkausten lukumäärä'}
+  yaxis={'title_text': 'Selkkausten lukumäärä'},
+  dragmode='select'
 )
 
 fig_osallistuneet = px.bar(statsit, x='Kunta', y=['Lähteneet lkm', 'Selvinneet lkm'], barmode='group')
@@ -67,10 +70,28 @@ fig_osallistuneet.update_layout(
   margin={"r":0,"t":0,"l":0,"b":0},
   xaxis={'title_text': None},
   yaxis={'title_text': 'Lukumäärä'},
-  legend=dict(title_text='Selite:', orientation='h', yanchor='bottom', y=1, xanchor='right', x=1)
+  legend=dict(title_text='Selite:', orientation='h', yanchor='bottom', y=1, xanchor='right', x=1),
+  dragmode='select'
 )
 fig_osallistuneet.update_traces(hovertemplate='Kunta=%{x}<br>Lähteneet=%{y}<extra></extra>', selector={'name': 'Lähteneet lkm'})
 fig_osallistuneet.update_traces(hovertemplate='Kunta=%{x}<br>Selvinneet=%{y}<extra></extra>', selector={'name': 'Selvinneet lkm'})
+
+fig_kaatumiset = px.bar(statsit, x='Kunta', y='Kaatumiset')
+fig_kaatumiset.update_layout(
+  margin={"r":0,"t":0,"l":0,"b":0},
+  xaxis={'title_text': None},
+  yaxis={'title_text': 'Lukumäärä'},
+  dragmode='select'
+)
+
+fig_osallistujaselviytymiset = px.bar(statsit_osallistujittain, x=statsit_osallistujittain.index.values, y='Selviytymiset')
+fig_osallistujaselviytymiset.update_layout(
+  margin={"r":0,"t":0,"l":0,"b":0},
+  xaxis={'title_text': None},
+  yaxis={'title_text': 'Lukumäärä'},
+  dragmode='select'
+  )
+fig_osallistujaselviytymiset.update_traces(hovertemplate='<b>%{x}</b><br>Selviytymiset=%{y}<extra></extra>')
 
 logger.info('defining layout')
 app.layout = dbc.Container([
@@ -105,6 +126,30 @@ app.layout = dbc.Container([
           dbc.CardBody(dcc.Graph(
             id='osallistuneet-fig',
             figure=fig_osallistuneet,
+            config={'displayModeBar': False}
+          ))
+        ]),
+        width=6
+      )
+    ], className='mb-3'),
+    dbc.Row([
+      dbc.Col(
+        dbc.Card([
+          dbc.CardHeader('Kaatumiset kunnittain'),
+          dbc.CardBody(dcc.Graph(
+            id='kaatumiset-fig',
+            figure=fig_kaatumiset,
+            config={'displayModeBar': False}
+          ))
+        ]),
+        width=6
+      ),
+      dbc.Col(
+        dbc.Card([
+          dbc.CardHeader('Selviytymismäärä osallistujittain'),
+          dbc.CardBody(dcc.Graph(
+            id='selvitymiset-fig',
+            figure=fig_osallistujaselviytymiset,
             config={'displayModeBar': False}
           ))
         ]),
