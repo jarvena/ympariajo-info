@@ -1327,3 +1327,58 @@
 2021-06-21 15:04:14,545 [INFO] [/home/antti/projects/ympariajo-info/app.py line 71 @139626250450752] - creating graphs 
 2021-06-21 15:04:16,601 [INFO] [/home/antti/projects/ympariajo-info/app.py line 134 @139626250450752] - defining layout 
 2021-06-21 15:04:16,603 [INFO] [/home/antti/projects/ympariajo-info/app.py line 280 @139626250450752] - running development server 
+2021-06-21 15:13:06,940 [INFO] [app.py line 28 @140225372297024] - app script starts 
+2021-06-21 15:13:06,978 [INFO] [app.py line 36 @140225372297024] - reading data 
+2021-06-21 15:13:07,397 [INFO] [app.py line 61 @140225372297024] - formatting data 
+2021-06-21 15:13:07,412 [INFO] [app.py line 71 @140225372297024] - creating graphs 
+2021-06-21 15:13:09,243 [INFO] [app.py line 134 @140225372297024] - defining layout 
+2021-06-21 15:13:09,245 [INFO] [app.py line 280 @140225372297024] - running development server 
+2021-06-21 15:13:09,246 [INFO] [/home/antti/projects/ympariajo-info/ajoinfo/lib/python3.8/site-packages/dash/dash.py line 1716 @140225372297024] - Dash is running on http://127.0.0.1:8050/
+ 
+2021-06-21 15:13:10,113 [INFO] [/home/antti/projects/ympariajo-info/app.py line 28 @139999715235648] - app script starts 
+2021-06-21 15:13:10,149 [INFO] [/home/antti/projects/ympariajo-info/app.py line 36 @139999715235648] - reading data 
+2021-06-21 15:13:10,559 [INFO] [/home/antti/projects/ympariajo-info/app.py line 61 @139999715235648] - formatting data 
+2021-06-21 15:13:10,564 [INFO] [/home/antti/projects/ympariajo-info/app.py line 71 @139999715235648] - creating graphs 
+2021-06-21 15:13:12,373 [INFO] [/home/antti/projects/ympariajo-info/app.py line 134 @139999715235648] - defining layout 
+2021-06-21 15:13:12,375 [INFO] [/home/antti/projects/ympariajo-info/app.py line 280 @139999715235648] - running development server 
+2021-06-21 17:27:04,095 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139998508955392] - Creating/updating live location tracking 
+2021-06-21 17:27:33,030 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139998508955392] - Creating/updating live location tracking 
+2021-06-21 17:28:03,031 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139998508955392] - Creating/updating live location tracking 
+2021-06-21 17:28:33,048 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139998508955392] - Creating/updating live location tracking 
+2021-06-21 17:29:03,060 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139998508955392] - Creating/updating live location tracking 
+2021-06-21 17:29:33,085 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139998508955392] - Creating/updating live location tracking 
+2021-06-21 17:30:03,083 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139998508955392] - Creating/updating live location tracking 
+2021-06-21 17:30:33,087 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139998508955392] - Creating/updating live location tracking 
+2021-06-21 17:31:03,092 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139998508955392] - Creating/updating live location tracking 
+2021-06-21 17:31:33,104 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139998508955392] - Creating/updating live location tracking 
+2021-06-21 17:31:53,200 [INFO] [/home/antti/projects/ympariajo-info/app.py line 28 @139841168975680] - app script starts 
+2021-06-21 17:31:53,244 [INFO] [/home/antti/projects/ympariajo-info/app.py line 36 @139841168975680] - reading data 
+2021-06-21 17:31:53,723 [INFO] [/home/antti/projects/ympariajo-info/app.py line 61 @139841168975680] - formatting data 
+2021-06-21 17:31:53,729 [INFO] [/home/antti/projects/ympariajo-info/app.py line 71 @139841168975680] - creating graphs 
+2021-06-21 17:31:55,495 [INFO] [/home/antti/projects/ympariajo-info/app.py line 134 @139841168975680] - defining layout 
+2021-06-21 17:31:55,497 [INFO] [/home/antti/projects/ympariajo-info/app.py line 280 @139841168975680] - running development server 
+2021-06-21 17:31:57,466 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:32:26,728 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:32:58,044 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:33:28,849 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:33:59,137 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:34:29,608 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:34:59,836 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:35:30,188 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:36:00,430 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:36:30,740 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:37:01,066 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:37:31,429 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:38:01,690 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:38:31,956 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:39:02,261 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:39:32,592 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:40:02,852 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839957620480] - Creating/updating live location tracking 
+2021-06-21 17:40:33,385 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839957620480] - Creating/updating live location tracking 
+2021-06-21 17:41:03,420 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839957620480] - Creating/updating live location tracking 
+2021-06-21 17:41:33,714 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839957620480] - Creating/updating live location tracking 
+2021-06-21 17:42:04,010 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839957620480] - Creating/updating live location tracking 
+2021-06-21 17:42:34,360 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839957620480] - Creating/updating live location tracking 
+2021-06-21 17:43:06,329 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839957620480] - Creating/updating live location tracking 
+2021-06-21 17:43:35,596 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 
+2021-06-21 17:44:06,331 [INFO] [/home/antti/projects/ympariajo-info/app.py line 210 @139839966013184] - Creating/updating live location tracking 

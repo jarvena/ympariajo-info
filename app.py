@@ -47,7 +47,7 @@ def parse_locationdata(collection): # A function for reading location informatio
     if datetime.datetime.now() - object['route'][-1][-1] < LIVE_LENGTH:
       reitit['lons'] = reitit['lons'] + list(map(lambda x: x[0], object['route']))
       reitit['lats'] = reitit['lats'] + list(map(lambda x: x[1], object['route']))
-      reitit['times'] = reitit['times'] + list(map(lambda x: x[2], object['route']))
+      reitit['times'] = reitit['times'] + list(map(lambda x: x[2] + datetime.timedelta(hours=3), object['route']))
       reitit['names'] = reitit['names'] + [object['details']['name']['first']]*len(object['route'])
       kuvat[object['details']['name']['first']] = object['details']['photo']
   
