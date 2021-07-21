@@ -259,7 +259,7 @@ def updateLive(n):
     )
   )
 
-  if datetime.datetime.now() - latest_update.times < datetime.timedelta(minutes=5):
+  if datetime.datetime.now(datetime.timezone.utc) - latest_update.times - datetime.timedelta(hours=3) < datetime.timedelta(minutes=5):
     badgeText = 'Live'; badgeColor='success'
   else:
     badgeText = 'Offline'; badgeColor='danger'
