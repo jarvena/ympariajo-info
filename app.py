@@ -15,7 +15,7 @@ import datetime
 
 DB_URL = os.getenv('DB_URL')
 LIVE_LENGTH = datetime.timedelta(days=1)
-AJETTAVA = 'Lohja'
+AJETTAVA = 'Askola'
 
 logging.basicConfig(
     level=logging.INFO,
@@ -45,8 +45,8 @@ def parse_locationdata(collection): # A function for reading location informatio
 
   for object in data:
     if datetime.datetime.now() - object['route'][-1][-1] < LIVE_LENGTH:
-      reitit['lons'] = reitit['lons'] + list(map(lambda x: x[0], object['route']))
-      reitit['lats'] = reitit['lats'] + list(map(lambda x: x[1], object['route']))
+      reitit['lons'] = reitit['lons'] + list(map(lambda x: x[1], object['route']))
+      reitit['lats'] = reitit['lats'] + list(map(lambda x: x[0], object['route']))
       reitit['times'] = reitit['times'] + list(map(lambda x: x[2] + datetime.timedelta(hours=3), object['route']))
       reitit['names'] = reitit['names'] + [object['details']['name']['first']]*len(object['route'])
       kuvat[object['details']['name']['first']] = object['details']['photo']
@@ -221,8 +221,8 @@ def updateLive(n):
     legend=dict(yanchor='top', y=0.99, xanchor='left', x=0.01),
     legend_title_text='Selite',
     mapbox={
-      'zoom': 8,
-      'center': {"lat":60.4, "lon":23.96}
+      'zoom': 10,
+      'center': {"lat":60.5425, "lon":25.61}
     },
     uirevision='static' # to prevent ui reset at each update
   )
