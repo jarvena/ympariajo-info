@@ -15,7 +15,7 @@ import datetime
 
 DB_URL = os.getenv('DB_URL')
 LIVE_LENGTH = datetime.timedelta(days=1)
-AJETTAVA = 'Tuusula'
+AJETTAVA = 'Myrskylä'
 
 logging.basicConfig(
     level=logging.INFO,
@@ -44,7 +44,7 @@ def parse_locationdata(collection): # A function for reading location informatio
   kuvat = {}
 
   for object in data:
-    if datetime.datetime.now() - object['route'][-1][-1] < LIVE_LENGTH:
+    if (datetime.datetime.now() - object['route'][-1][-1] < LIVE_LENGTH) and (len(object['route'])>0):
       reitit['lons'] = reitit['lons'] + list(map(lambda x: x[1], object['route']))
       reitit['lats'] = reitit['lats'] + list(map(lambda x: x[0], object['route']))
       reitit['times'] = reitit['times'] + list(map(lambda x: x[2] + datetime.timedelta(hours=3), object['route']))
@@ -209,6 +209,9 @@ def updateLive(n):
   
   logger.info('Creating/updating live location tracking')
 
+  liveData = liveData[liveData.times > datetime.datetime.now() - LIVE_LENGTH]
+  print(liveData.head())
+
   liveKartta = px.line_mapbox(liveData,
     lat='lats',
     lon='lons',
@@ -216,20 +219,21 @@ def updateLive(n):
     mapbox_style="carto-positron",
     hover_data={'names': True, 'times': "|%X"}
   )
-  liveKartta.update_layout(
-    margin={"r":0,"t":0,"l":0,"b":0},
-    legend=dict(yanchor='top', y=0.99, xanchor='left', x=0.01),
-    legend_title_text='Selite',
-    mapbox={
-      'zoom': 10,
-      'center': {"lat":60.5425, "lon":25.61}
-    },
-    uirevision='static' # to prevent ui reset at each update
-  )
+  # liveKartta.update_layout(
+  #   margin={"r":0,"t":0,"l":0,"b":0},
+  #   legend=dict(yanchor='top', y=0.99, xanchor='left', x=0.01),
+  #   legend_title_text='Selite',
+  #   mapbox={
+  #     'zoom': 10,
+  #     'center': {"lat":60.5425, "lon":25.61}
+  #   },
+  #   uirevision='static' # to prevent ui reset at each update
+  # )
   liveKartta.update_traces(hovertemplate='<b>%{customdata[0]}</b><br>Nähty: %{customdata[1]|%H:%M}<extra></extra>')
 
   # Highlighting the latest location update
-  latest_update = liveData.iloc[liveData['times'].idxmax()]
+  print('latest update: ', liveData['times'].idxmax())
+  latest_update = liveData.loc[liveData['times'].idxmax()]
   liveKartta.add_trace(
     go.Scattermapbox(
       lat=[latest_update.lats],
@@ -257,6 +261,18 @@ def updateLive(n):
       hovertemplate=f'<b>{AJETTAVA}</b><extra></extra>',
       line_color='#00cc96'
     )
+  )
+
+  # Set layout properties
+  liveKartta.update_layout(
+    margin={"r":0,"t":0,"l":0,"b":0},
+    legend=dict(yanchor='top', y=0.99, xanchor='left', x=0.01),
+    legend_title_text='Selite',
+    mapbox={
+      'zoom': 9.5,
+      'center': {"lat":geometry.centroid.y, "lon":geometry.centroid.x}
+    },
+    uirevision='static' # to prevent ui reset at each update
   )
 
   if datetime.datetime.now() - latest_update.times + datetime.timedelta(hours=3) < datetime.timedelta(minutes=5):
