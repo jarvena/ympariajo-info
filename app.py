@@ -210,7 +210,7 @@ def updateLive(n):
   logger.info('Creating/updating live location tracking')
 
   liveData = liveData[liveData.times > datetime.datetime.now() - LIVE_LENGTH]
-  print(liveData.head())
+  #print(liveData.head())
 
   liveKartta = px.line_mapbox(liveData,
     lat='lats',
@@ -248,20 +248,22 @@ def updateLive(n):
     )
   )
 
+  
+
   # Adding municipality border to the map
   geometry=kunnat[kunnat['NAMEFIN']==AJETTAVA].geometry.iloc[0]
-  lats=geometry.boundary.coords.xy[1]
-  lons=geometry.boundary.coords.xy[0]
-  liveKartta.add_trace(
-    go.Scattermapbox(
-      lat=list(lats),
-      lon=list(lons),
-      mode='lines',
-      name='Kunnanraja',
-      hovertemplate=f'<b>{AJETTAVA}</b><extra></extra>',
-      line_color='#00cc96'
-    )
-  )
+  # lats=geometry.boundary.coords.xy[1]
+  # lons=geometry.boundary.coords.xy[0]
+  # liveKartta.add_trace(
+  #   go.Scattermapbox(
+  #     lat=list(lats),
+  #     lon=list(lons),
+  #     mode='lines',
+  #     name='Kunnanraja',
+  #     hovertemplate=f'<b>{AJETTAVA}</b><extra></extra>',
+  #     line_color='#00cc96'
+  #   )
+  # )
 
   # Set layout properties
   liveKartta.update_layout(
