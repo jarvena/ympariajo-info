@@ -232,7 +232,7 @@ def updateLive(n):
   liveKartta.update_traces(hovertemplate='<b>%{customdata[0]}</b><br>Nähty: %{customdata[1]|%H:%M}<extra></extra>')
 
   # Highlighting the latest location update
-  print('latest update: ', liveData['times'].idxmax())
+  #print('latest update: ', liveData['times'].idxmax())
   latest_update = liveData.loc[liveData['times'].idxmax()]
   liveKartta.add_trace(
     go.Scattermapbox(
@@ -252,18 +252,18 @@ def updateLive(n):
 
   # Adding municipality border to the map
   geometry=kunnat[kunnat['NAMEFIN']==AJETTAVA].geometry.iloc[0]
-  # lats=geometry.boundary.coords.xy[1]
-  # lons=geometry.boundary.coords.xy[0]
-  # liveKartta.add_trace(
-  #   go.Scattermapbox(
-  #     lat=list(lats),
-  #     lon=list(lons),
-  #     mode='lines',
-  #     name='Kunnanraja',
-  #     hovertemplate=f'<b>{AJETTAVA}</b><extra></extra>',
-  #     line_color='#00cc96'
-  #   )
-  # )
+  lats=geometry.boundary.coords.xy[1]
+  lons=geometry.boundary.coords.xy[0]
+  liveKartta.add_trace(
+    go.Scattermapbox(
+      lat=list(lats),
+      lon=list(lons),
+      mode='lines',
+      name='Kunnanraja',
+      hovertemplate=f'<b>{AJETTAVA}</b><extra></extra>',
+      line_color='#00cc96'
+    )
+  )
 
   # Set layout properties
   liveKartta.update_layout(
