@@ -15,7 +15,7 @@ import datetime
 
 DB_URL = os.getenv('DB_URL')
 LIVE_LENGTH = datetime.timedelta(days=2)
-AJETTAVA = 'Myrskylä'
+AJETTAVA = 'Vihti'
 
 logging.basicConfig(
     level=logging.INFO,
