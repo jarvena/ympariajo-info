@@ -1,23 +1,23 @@
 ﻿Kunta;Lähteneet;Selvinneet;Kaatumiset;Välinerikot;Selkkaukset;Liikennevalot
-Espoo;OP Koistinen, Juha Rauhala, Markku Leppälä;OP Koistinen, Juha Rauhala, Markku Leppälä;0;0;0;0
-Helsinki;OP Koistinen, Juha Rauhala, Markku Leppälä, Antti Järvenpää, Ville Kokkila, Oskari Pesola, Jere Korteniemi, Lauri Sorsa;OP Koistinen, Markku Leppälä, Antti Järvenpää, Juha Rauhala;4;3;0;3
-Vantaa;OP Koistinen, Juha Rauhala, Antti Järvenpää, Ville Kokkila, Mikko Laakso, Vili Virkki, Jere Korteniemi, Markku Leppälä, Pinja Hokkanen;OP Koistinen, Juha Rauhala, Antti Järvenpää, Ville Kokkila, Markku Leppälä, Pinja Hokkanen;1;0;0;4
-Kirkkonummi;OP Koistinen, Juha Rauhala, Ville Kokkila, Jaska, Mikko Laakso, Rainer Kujala;OP Koistinen, Juha Rauhala, Ville Kokkila, Jaska;2;0;7;0
-Sipoo;OP Koistinen, Juha Rauhala, Ville Kokkila, Jaska, Antti Järvenpää, Oskari Pesola;OP Koistinen, Juha Rauhala, Ville Kokkila, Antti Järvenpää, Oskari Pesola, Jaska;1;0;1;1
-Pornainen;OP Koistinen, Juha Rauhala, Antti Järvenpää, Jaska, Markku Leppälä, Pinja Hokkanen;OP Koistinen, Juha Rauhala, Antti Järvenpää, Jaska, Markku Leppälä, Pinja Hokkanen;0;0;0;1
-Siuntio;OP Koistinen, Juha Rauhala, Antti Järvenpää, Jaska, Ville Kokkila;OP Koistinen, Juha Rauhala, Antti Järvenpää, Ville Kokkila, Jaska;1;0;1;1
-Järvenpää;OP Koistinen, Juha Rauhala, Jaska;OP Koistinen, Juha Rauhala, Jaska;0;0;0;0
-Nurmijärvi;OP Koistinen, Juha Rauhala, Jaska, Ville Kokkila, Amelie;OP Koistinen, Juha Rauhala, Jaska, Ville Kokkila;0;1;0;0
-Hanko;OP Koistinen, Juha Rauhala, Jaska, Caj Snickars;OP Koistinen, Juha Rauhala, Jaska;3;0;0;0
-Inkoo;OP Koistinen, Juha Rauhala, Jaska, Ville Kokkila, Antti Järvenpää, Jere Korteniemi, Rinat;OP Koistinen, Juha Rauhala, Jaska, Ville Kokkila, Antti Järvenpää, Jere Korteniemi;2;0;2;0
-Kerava;OP Koistinen, Juha Rauhala, Markku Leppälä, Antti Järvenpää, Ville Kokkila, Oskari Pesola, Jere Korteniemi, Mikko Laakso, Vili Virkki, Rinat;OP Koistinen, Juha Rauhala, Markku Leppälä, Antti Järvenpää, Ville Kokkila, Oskari Pesola, Jere Korteniemi, Mikko Laakso, Vili Virkki, Rinat;5;0;1;0
-Pukkila;OP Koistinen, Juha Rauhala, Antti Järvenpää;OP Koistinen, Juha Rauhala, Antti Järvenpää;0;0;0;0
-Lohja;OP Koistinen, Juha Rauhala, Antti Järvenpää, Ville Kokkila, Jaska;OP Koistinen, Juha Rauhala, Antti Järvenpää;5;2;0;0
-Askola;OP Koistinen, Juha Rauhala, Antti Järvenpää, Lauri Sorsa, Perttu Sorsa;OP Koistinen, Juha Rauhala, Antti Järvenpää, Lauri Sorsa, Perttu Sorsa;0;0;0;0
-Tuusula;OP Koistinen, Juha Rauhala, Antti Järvenpää, Jere Korteniemi, Rinat;OP Koistinen, Juha Rauhala, Antti Järvenpää, Jere Korteniemi;6;0;1;0
-Myrskylä;OP Koistinen, Juha Rauhala, Antti Järvenpää, Jere Korteniemi, Ville Kokkila;OP Koistinen, Juha Rauhala, Antti Järvenpää, Jere Korteniemi, Ville Kokkila;4;1;0;0
-Lapinjärvi;OP Koistinen, Juha Rauhala, Antti Järvenpää, Rinat, George;OP Koistinen, Juha Rauhala, Antti Järvenpää, Rinat, George;5;1;1;0
-Vihti;OP Koistinen, Juha Rauhala, Jaska;OP Koistinen, Juha Rauhala;4;0;1;0
-Mäntsälä;OP Koistinen, Juha Rauhala, Jaska, Markku Leppälä, Vili Virkki;OP Koistinen, Juha Rauhala, Jaska, Markku Leppälä;1;4;0;0
-Karkkila;OP Koistinen, Juha Rauhala, Jaska, Antti Järvenpää, Ville Kokkila;OP Koistinen, Juha Rauhala, Jaska, Antti Järvenpää, Ville Kokkila;1;1;0;0
-Loviisa;OP Koistinen, Juha Rauhala, Markku Leppälä, Antti Järvenpää, Jaska;OP Koistinen, Juha Rauhala, Markku Leppälä, Antti Järvenpää, Jaska;3;4;0;1
+Espoo;OP Koistinen,Juha Rauhala,Markku Leppälä;OP Koistinen,Juha Rauhala,Markku Leppälä;0;0;0;0
+Helsinki;OP Koistinen,Juha Rauhala,Markku Leppälä,Antti Järvenpää,Ville Kokkila,Oskari Pesola,Jere Korteniemi,Lauri Sorsa;OP Koistinen,Markku Leppälä,Antti Järvenpää,Juha Rauhala;4;3;0;3
+Vantaa;OP Koistinen,Juha Rauhala,Antti Järvenpää,Ville Kokkila,Mikko Laakso,Vili Virkki,Jere Korteniemi,Markku Leppälä,Pinja Hokkanen;OP Koistinen,Juha Rauhala,Antti Järvenpää,Ville Kokkila,Markku Leppälä,Pinja Hokkanen;1;0;0;4
+Kirkkonummi;OP Koistinen,Juha Rauhala,Ville Kokkila,Jaska,Mikko Laakso,Rainer Kujala;OP Koistinen,Juha Rauhala,Ville Kokkila,Jaska;2;0;7;0
+Sipoo;OP Koistinen,Juha Rauhala,Ville Kokkila,Jaska,Antti Järvenpää,Oskari Pesola;OP Koistinen,Juha Rauhala,Ville Kokkila,Antti Järvenpää,Oskari Pesola,Jaska;1;0;1;1
+Pornainen;OP Koistinen,Juha Rauhala,Antti Järvenpää,Jaska,Markku Leppälä,Pinja Hokkanen;OP Koistinen,Juha Rauhala,Antti Järvenpää,Jaska,Markku Leppälä,Pinja Hokkanen;0;0;0;1
+Siuntio;OP Koistinen,Juha Rauhala,Antti Järvenpää,Jaska,Ville Kokkila;OP Koistinen,Juha Rauhala,Antti Järvenpää,Ville Kokkila,Jaska;1;0;1;1
+Järvenpää;OP Koistinen,Juha Rauhala,Jaska;OP Koistinen,Juha Rauhala,Jaska;0;0;0;0
+Nurmijärvi;OP Koistinen,Juha Rauhala,Jaska,Ville Kokkila,Amelie;OP Koistinen,Juha Rauhala,Jaska,Ville Kokkila;0;1;0;0
+Hanko;OP Koistinen,Juha Rauhala,Jaska,Caj Snickars;OP Koistinen,Juha Rauhala,Jaska;3;0;0;0
+Inkoo;OP Koistinen,Juha Rauhala,Jaska,Ville Kokkila,Antti Järvenpää,Jere Korteniemi,Rinat;OP Koistinen,Juha Rauhala,Jaska,Ville Kokkila,Antti Järvenpää,Jere Korteniemi;2;0;2;0
+Kerava;OP Koistinen,Juha Rauhala,Markku Leppälä,Antti Järvenpää,Ville Kokkila,Oskari Pesola,Jere Korteniemi,Mikko Laakso,Vili Virkki,Rinat;OP Koistinen,Juha Rauhala,Markku Leppälä,Antti Järvenpää,Ville Kokkila,Oskari Pesola,Jere Korteniemi,Mikko Laakso,Vili Virkki,Rinat;5;0;1;0
+Pukkila;OP Koistinen,Juha Rauhala,Antti Järvenpää;OP Koistinen,Juha Rauhala,Antti Järvenpää;0;0;0;0
+Lohja;OP Koistinen,Juha Rauhala,Antti Järvenpää,Ville Kokkila,Jaska;OP Koistinen,Juha Rauhala,Antti Järvenpää;5;2;0;0
+Askola;OP Koistinen,Juha Rauhala,Antti Järvenpää,Lauri Sorsa,Perttu Sorsa;OP Koistinen,Juha Rauhala,Antti Järvenpää,Lauri Sorsa,Perttu Sorsa;0;0;0;0
+Tuusula;OP Koistinen,Juha Rauhala,Antti Järvenpää,Jere Korteniemi,Rinat;OP Koistinen,Juha Rauhala,Antti Järvenpää,Jere Korteniemi;6;0;1;0
+Myrskylä;OP Koistinen,Juha Rauhala,Antti Järvenpää,Jere Korteniemi,Ville Kokkila;OP Koistinen,Juha Rauhala,Antti Järvenpää,Jere Korteniemi,Ville Kokkila;4;1;0;0
+Lapinjärvi;OP Koistinen,Juha Rauhala,Antti Järvenpää,Rinat,George;OP Koistinen,Juha Rauhala,Antti Järvenpää,Rinat,George;5;1;1;0
+Vihti;OP Koistinen,Juha Rauhala,Jaska;OP Koistinen,Juha Rauhala;4;0;1;0
+Mäntsälä;OP Koistinen,Juha Rauhala,Jaska,Markku Leppälä,Vili Virkki;OP Koistinen,Juha Rauhala,Jaska,Markku Leppälä;1;4;0;0
+Karkkila;OP Koistinen,Juha Rauhala,Jaska,Antti Järvenpää,Ville Kokkila;OP Koistinen,Juha Rauhala,Jaska,Antti Järvenpää,Ville Kokkila;1;1;0;0
+Loviisa;OP Koistinen,Juha Rauhala,Markku Leppälä,Antti Järvenpää,Jaska;OP Koistinen,Juha Rauhala,Markku Leppälä,Antti Järvenpää,Jaska;3;4;0;1
