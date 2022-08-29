@@ -209,7 +209,7 @@ def updateLive(n):
   
   logger.info('Creating/updating live location tracking')
 
-  liveData = liveData[liveData.times > datetime.datetime.now() - LIVE_LENGTH]
+  liveData = liveData[liveData.times > datetime.datetime.now() - LIVE_LENGTH - datetime.timedelta(days=1)]
   #print(liveData.head())
 
   liveKartta = px.line_mapbox(liveData,
