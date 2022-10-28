@@ -65,6 +65,7 @@ statsit['Lähteneet'] = statsit['Lähteneet'].str.strip(' ').str.split(',')
 statsit['Selvinneet'] = statsit['Selvinneet'].str.strip(' ').str.split(',')
 statsit['Lähteneet lkm'] = statsit['Lähteneet'].apply(len)
 statsit['Selvinneet lkm'] = statsit['Selvinneet'].apply(len)
+statsit['Keskeyttäneet lkm'] = statsit['Lähteneet lkm'] - statsit['Selvinneet lkm']
 
 statsit_osallistujittain = pd.DataFrame(statsit['Selvinneet'].explode().value_counts()).rename(columns={'Selvinneet': 'Selviytymiset'})
 
@@ -95,7 +96,7 @@ fig_selkkaukset.update_layout(
   dragmode='select'
 )
 
-fig_osallistuneet = px.bar(statsit, x='Kunta', y=['Lähteneet lkm', 'Selvinneet lkm'], barmode='group')
+fig_osallistuneet = px.bar(statsit, x='Kunta', y=['Selvinneet lkm', 'Keskeyttäneet lkm'] )#barmode='group')
 fig_osallistuneet.update_layout(
   margin={"r":0,"t":0,"l":0,"b":0},
   xaxis={'title_text': None},
@@ -103,8 +104,8 @@ fig_osallistuneet.update_layout(
   legend=dict(title_text='Selite:', orientation='h', yanchor='bottom', y=1, xanchor='right', x=1),
   dragmode='select'
 )
-fig_osallistuneet.update_traces(hovertemplate='Kunta=%{x}<br>Lähteneet=%{y}<extra></extra>', selector={'name': 'Lähteneet lkm'})
 fig_osallistuneet.update_traces(hovertemplate='Kunta=%{x}<br>Selvinneet=%{y}<extra></extra>', selector={'name': 'Selvinneet lkm'})
+fig_osallistuneet.update_traces(hovertemplate='Kunta=%{x}<br>Keskeyttäneet=%{y}<extra></extra>', selector={'name': 'Keskeyttäneet lkm'})
 
 fig_kaatumiset = px.bar(statsit, x='Kunta', y='Kaatumiset')
 fig_kaatumiset.update_layout(
